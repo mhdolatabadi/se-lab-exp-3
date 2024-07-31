@@ -1,6 +1,8 @@
 # se-lab-exp-3
 
 # اجرای تست‌ها با نمایش درصد پوشش (code coverage)
+# آزمایش ابتدایی برای گرفتن پوشش آزمون  
+
 تصاویر اجرای مراحل طبق دستور در بخش زیر به ترتیب آمده است.
 ![image](https://github.com/user-attachments/assets/5027ed85-19e7-484c-a5dd-172520066b4c)
 ![image](https://github.com/user-attachments/assets/e8a39eaa-15d1-441e-809a-840783148d9f)
