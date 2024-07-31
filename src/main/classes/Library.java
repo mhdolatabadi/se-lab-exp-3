@@ -1,6 +1,7 @@
 package main.classes;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Library {
     private ArrayList<Book> books;
@@ -79,8 +80,13 @@ public class Library {
      * @param keys         The list of keys to search for.
      * @return             The list of students that match the search criteria. Returns null if search type is title or author.
      */
-    public ArrayList<Student> searchStudents(SearchByType searchByType, ArrayList<Object> keys) {
-        // TODO complete function
+    public List<Student> searchStudents(SearchByType searchByType, List<Object> keys) {
+        if (searchByType.equals(SearchByType.ID)) {
+            return students.stream().filter(s -> keys.contains(s.getId())).toList();
+        }
+        if (searchByType.equals(SearchByType.NAME)) {
+            return students.stream().filter(s -> keys.contains(s.getName())).toList();
+        }
         return null;
     }
 
@@ -92,9 +98,13 @@ public class Library {
      * @param keys         The list of keys to search for.
      * @return             The list of books that match the search criteria. Returns null if search type is name.
      */
-    public ArrayList<Book> searchBooks(SearchByType searchByType, ArrayList<Object> keys) {
-        // TODO complete function
-        return null;
+    public List<Book> searchBooks(SearchByType searchByType, List<Object> keys) {
+        return switch (searchByType) {
+            case ID -> books.stream().filter(b -> keys.contains(b.getId())).toList();
+            case TITLE -> books.stream().filter(b -> keys.contains(b.getTitle())).toList();
+            case AUTHOR -> books.stream().filter(b -> keys.contains(b.getAuthor())).toList();
+            default -> null;
+        };
     }
 
     /**
