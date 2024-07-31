@@ -1,5 +1,17 @@
 # se-lab-exp-3
 
+# اجرای تست‌ها با نمایش درصد پوشش (code coverage)
+تصاویر اجرای مراحل طبق دستور در بخش زیر به ترتیب آمده است.
+![image](https://github.com/user-attachments/assets/5027ed85-19e7-484c-a5dd-172520066b4c)
+![image](https://github.com/user-attachments/assets/e8a39eaa-15d1-441e-809a-840783148d9f)
+![image](https://github.com/user-attachments/assets/301b215e-4d72-4035-9a97-2ed0abebcc8a)
+![image](https://github.com/user-attachments/assets/61276958-364d-4b23-a8e2-c5b20db3c3da)
+![image](https://github.com/user-attachments/assets/7099db95-ba9b-4f1b-b488-8fbb437816fd)
+![image](https://github.com/user-attachments/assets/00235c34-007b-415e-867f-523c882bd621)
+
+
+
+
 # استفاده از TDD:
 
 ## بخش اول:
